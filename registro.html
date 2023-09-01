@@ -29,7 +29,7 @@
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
                     <div class="input-container">
-                        <input name="email" id="email" class="input" type="email" placeholder="Email" required datad-tipo="email">
+                        <input name="email" id="email" class="input" type="email" placeholder="Email" required data-tipo="email">
                         <label class="input-label" for="email">Email</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
@@ -47,7 +47,7 @@
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
                     <div class="input-container">
-                        <input name="phoneNumber" id="phoneNumber" class="input" type="text" placeholder="Número telefónico" pattern="\d{10}" required minlength="10" maxlength="10" data-tipo="numero">
+                        <input name="phoneNumber" id="phoneNumber" class="input" type="text" placeholder="Número telefónico" pattern="\d{10}" required minlegth="10" maxlength="10" data-tipo="numero">
                         <label class="input-label" for="phoneNumber">Número telefónico</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
@@ -55,15 +55,17 @@
                 <fieldset>
                     <legend class="form__label">Dirección</legend>
                     <div class="input-container">
-                        <input name="cep" id="cep" class="input" type="text" placeholder="Direccion" required pattern="[\s\S]{10,40}" data-tipo="direccion">
-                        <label class="input-label" for="cep">Dirección completa</label>
+                        <input name="address" id="address" class="input" type="text" placeholder="Dirección" required pattern="[\s\S]{10,40}" data-tipo="direccion">
+                        <label class="input-label" for="address">Dirección completa</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
                     <div class="input-container">
-                        <input name="city" id="city" class="input" type="text" placeholder="Ciudad" required pattern="[\s\S]{10,40}" data-tipo="ciudad">                        <span class="input-message-error">Este campo no es valido</span>
+                        <input name="city" id="city" class="input" type="text" placeholder="Ciudad" required pattern="[\s\S]{4,30}" data-tipo="ciudad">
+                        <label class="input-label" for="city">Ciudad</label>
+                        <span class="input-message-error">Este campo no es valido</span>
                     </div>
                     <div class="input-container">
-                        <input name="state" id="state" class="input" type="text" placeholder="Estado" required pattern="[\s\S]{10,40}" data-tipo="estado">
+                        <input name="state" id="state" class="input" type="text" placeholder="Estado" required pattern="[\s\S]{4,30}" data-tipo="estado">
                         <label class="input-label" for="state">Estado</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
@@ -72,6 +74,9 @@
             </form>
         </section>
     </main>
-    <script src="/js/app.js" type="module"></script>
+
+    <script src="./js/app.js" type="module"></script>
+</body>
+</html>
 </body>
 </html>
